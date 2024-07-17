@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div id="app">
+        <h1>Botanical Plants</h1>
+       <!---- <input type="text" id="search" placeholder="Search">
+        <button>ENTER</button> -->
+        <div v-for="plant in filteredPlants" :key="plant.id" class="plant">
+            <h2>{{ plant.common_name }}</h2>
+            <img :src="plant.image_url" :alt="plant.common_name">
+            <p><strong>Scientific Name:</strong> {{ plant.scientific_name }}</p>
+            <p><strong>Family:</strong> {{ plant.family_common_name }}</p>
+            <details>
+                <summary>Synonyms</summary>
+                <ul>
+                    <li v-for="synonym in plant.synonyms" :key="synonym">{{ synonym }}</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
+
