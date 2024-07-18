@@ -33,8 +33,8 @@ new Vue({
             console.log(event.target.alt);
         },
         handleImageMouseOver(event) {
-            event.target.style.borderColor = 'red';
-            event.target.style.borderWidth = '2px';
+            event.target.style.borderColor = 'orange';
+            event.target.style.borderWidth = '5px';
             event.target.style.borderStyle = 'solid';
         },
         handleImageMouseOut(event) {
