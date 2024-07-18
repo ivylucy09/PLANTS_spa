@@ -14,8 +14,8 @@
             <a href="#" @click.prevent="setRoute('about')">About Us</a>
         </nav>
         <h1>Botanical Plants</h1>
-       <!---- <input type="text" id="search" placeholder="Search">
-        <button>ENTER</button> -->
+       <input type="text" id="search" placeholder="Search">
+        <button>ENTER</button> 
         <div v-for="plant in filteredPlants" :key="plant.id" class="plant">
             <h2>{{ plant.common_name }}</h2>
             <img :src="plant.image_url" :alt="plant.common_name">
