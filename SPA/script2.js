@@ -2,7 +2,8 @@ new Vue({
     el: '#app',
     data: {
         plants: [],
-        searchQuery: ''
+        searchQuery: '',
+        currentRoute: 'home'
     },
     computed: {
         filteredPlants() {
@@ -41,6 +42,9 @@ new Vue({
             event.target.style.borderColor = '';
             event.target.style.borderWidth = '';
             event.target.style.borderStyle = '';
+        },
+        setRoute(route) {
+            this.currentRoute = route; // Set the current route
         }
     },
     mounted() {

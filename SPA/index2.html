@@ -9,6 +9,10 @@
     </head>
 <body>
     <div id="app">
+        <nav>
+            <a href="#" @click.prevent="setRoute('home')">Home</a>
+            <a href="#" @click.prevent="setRoute('about')">About Us</a>
+        </nav>
         <h1>Botanical Plants</h1>
        <!---- <input type="text" id="search" placeholder="Search">
         <button>ENTER</button> -->
@@ -24,6 +28,10 @@
                 </ul>
             </details>
         </div>
+    </div>
+    <div v-if="currentRoute === 'about'">
+        <h2>About Us</h2>
+        <p>Welcome to the Botanical Plants application. This app provides information about various botanical plants including their common names, scientific names, families, and synonyms.Researchers, students and scientists alongside nature lovers and other interested parties will especially find it useful in their work. </p>
     </div>
     <script src="script2.js"></script>
 </body>
