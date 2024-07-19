@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../Images/GreenPlant.jpg'); /* Change this to your background image path */
+    background-image: url('../Images/GreenPlant.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 header {
-    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green */
+    background-color: rgba(0, 128, 0, 0.8); 
     padding: 10px;
 }
 
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 #search {
-    width: 300px; /* Increased width */
+    width: 300px; 
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -83,7 +83,7 @@ button:hover {
 }
 
 .plant img {
-    max-width: 75%; /* Ensures the image doesn't exceed the container width */
+    max-width: 75%; 
     height: auto;
     display: block;
 }
@@ -95,7 +95,7 @@ button:hover {
     padding: 10px;
     margin-right: 10px;
     cursor: pointer;
-    width: 100px; /* Increased width */
+    width: 100px; 
 }
 
 .edit-button:hover {
@@ -108,7 +108,7 @@ button:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
-    width: 100px; /* Increased width */
+    width: 100px; 
 }
 
 .delete-button:hover {
@@ -116,7 +116,7 @@ button:hover {
 }
 
 .about-section, .services-section, .contact-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
